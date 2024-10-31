@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    background-color: rgb(159, 18, 18);
+    padding: 15px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+}
+
+.link {
+    margin: 0 15px;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburg {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(159, 18, 18);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+}
+
+.dropdown.show {
+    display: flex;
+}
+
+.dropdown a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    text-align: center;
+}
+
+.main-container {
+    max-width: 600px;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0
+}
+
+@media (max-width: 765px) {
+    .links {
+        display: none; /* Sembunyikan tautan pada layar kecil */
+    }
+
+    .hamburg {
+        display: block; /* Tampilkan ikon hamburger */
+    }
+
+    .dropdown {
+        width: 100%; /* Dropdown mengambil lebar penuh */
+    }
+
+    .hero {
+        height: auto; /* Sesuaikan tinggi hero */
+        padding: 20px; /* Tambahkan padding */
+    }
+
+    .social-links {
+        flex-direction: column; /* Susun ikon sosial secara vertikal */
+    }
+
+    .social-links a {
+        margin: 5px 0; /* Margin vertikal untuk ikon sosial */
+    }
+}
