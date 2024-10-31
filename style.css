@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;200;300;400;500;600&display=swap');
 
 *{
     margin: 0;
@@ -29,6 +29,36 @@ nav {
     align-items: center;
 }
 
+.nav-container .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(159, 18, 18);
+}
+
+.hamburg,
+.cancel {
+    position: absolute;
+    display: none;
+    right: 15px;
+    top: 10px;
+    color: white;
+    font-size: clamp(2.5rem, 0.5rem + 5vw, 5rem);
+    cursor: pointer;
+}
+
+.nav-container .links {
+    display: flex;
+}
+
+.nav-container .links a {
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+}
+
 .links {
     list-style: none;
     display: flex;
@@ -41,13 +71,6 @@ nav {
 .link a {
     color: white;
     text-decoration: none;
-}
-
-.hamburg {
-    display: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
 }
 
 .dropdown {
